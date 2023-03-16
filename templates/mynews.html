@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        div.box {
+            background-color: honeydew;
+            text-align: center;
+            margin: auto;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        div {
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Enter Your Details</h2>
+        <form action="/" method="post">
+            <div> Name : <input type="text" name="Name"> </div>
+
+            <div> email : <input type="email" name="mail"> </div>
+
+            <div>
+             Preferred Topic : <input type="text" id="query" name="query">
+            </div>
+            <div>
+                <label for="Country">Country :</label>
+                <select name="Country" id="Country">
+                    India<option value="IN">IN</option>
+                    USA<option value="US">US</option>
+                    Germany<option value="DE">DE</option>
+                    Hong Kong<option value="hk">HK</option>
+                </select>
+            </div>
+            
+            
+            <div>
+                <input class="button" type="submit">
+            </div>
+    </div>
+        </form>
+</body>
+
+</html>
